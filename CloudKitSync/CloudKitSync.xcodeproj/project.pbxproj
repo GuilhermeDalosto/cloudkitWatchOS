@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC64638D249168BA00969F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64638C249168BA00969F02 /* AppDelegate.swift */; };
+		AC64638F249168BA00969F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64638E249168BA00969F02 /* SceneDelegate.swift */; };
+		AC646391249168BA00969F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC646390249168BA00969F02 /* ViewController.swift */; };
+		AC646394249168BA00969F02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC646392249168BA00969F02 /* Main.storyboard */; };
+		AC646396249168BE00969F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC646395249168BE00969F02 /* Assets.xcassets */; };
+		AC646399249168BF00969F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC646397249168BF00969F02 /* LaunchScreen.storyboard */; };
+		AC64639E249168BF00969F02 /* CloudKitSync WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC64639D249168BF00969F02 /* CloudKitSync WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC6463A4249168BF00969F02 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6463A2249168BF00969F02 /* Interface.storyboard */; };
+		AC6463A6249168C000969F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6463A5249168C000969F02 /* Assets.xcassets */; };
+		AC6463AD249168C000969F02 /* CloudKitSync WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC6463AC249168C000969F02 /* CloudKitSync WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC6463B2249168C000969F02 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6463B1249168C000969F02 /* InterfaceController.swift */; };
+		AC6463B4249168C000969F02 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6463B3249168C000969F02 /* ExtensionDelegate.swift */; };
+		AC6463B6249168C100969F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6463B5249168C100969F02 /* Assets.xcassets */; };
+		AC6463C72491690E00969F02 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6463C62491690E00969F02 /* CoreDataManager.swift */; };
+		AC6463CB2491692200969F02 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6463CA2491692200969F02 /* CloudKit.framework */; };
+		AC6463CE24916A6500969F02 /* CloudKitSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC6463CC24916A6500969F02 /* CloudKitSync.xcdatamodeld */; };
+		AC6463D02491736E00969F02 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6463C62491690E00969F02 /* CoreDataManager.swift */; };
+		AC6463D22491739400969F02 /* CharacterDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6463D12491739400969F02 /* CharacterDef.swift */; };
+		AC6463D32491739E00969F02 /* CharacterDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6463D12491739400969F02 /* CharacterDef.swift */; };
+		AC6463D4249173AC00969F02 /* CloudKitSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC6463CC24916A6500969F02 /* CloudKitSync.xcdatamodeld */; };
+		ACDF85E3249177BE004238FD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACDF85E2249177BE004238FD /* CloudKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC64639F249168BF00969F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC646381249168BA00969F02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC64639C249168BF00969F02;
+			remoteInfo = "CloudKitSync WatchKit App";
+		};
+		AC6463AE249168C000969F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC646381249168BA00969F02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC6463AB249168C000969F02;
+			remoteInfo = "CloudKitSync WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC6463BD249168C100969F02 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC6463AD249168C000969F02 /* CloudKitSync WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6463C1249168C100969F02 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AC64639E249168BF00969F02 /* CloudKitSync WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC646389249168BA00969F02 /* CloudKitSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC64638C249168BA00969F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC64638E249168BA00969F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AC646390249168BA00969F02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC646393249168BA00969F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC646395249168BE00969F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC646398249168BF00969F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC64639A249168BF00969F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC64639D249168BF00969F02 /* CloudKitSync WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CloudKitSync WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6463A3249168BF00969F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AC6463A5249168C000969F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC6463A7249168C000969F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC6463AC249168C000969F02 /* CloudKitSync WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CloudKitSync WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6463B1249168C000969F02 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AC6463B3249168C000969F02 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AC6463B5249168C100969F02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC6463B7249168C100969F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC6463C62491690E00969F02 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AC6463C82491691E00969F02 /* CloudKitSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitSync.entitlements; sourceTree = "<group>"; };
+		AC6463CA2491692200969F02 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		AC6463CD24916A6500969F02 /* CloudKitSync.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudKitSync.xcdatamodel; sourceTree = "<group>"; };
+		AC6463D12491739400969F02 /* CharacterDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDef.swift; sourceTree = "<group>"; };
+		ACDF85E1249177BA004238FD /* CloudKitSync WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CloudKitSync WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		ACDF85E2249177BE004238FD /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC646386249168BA00969F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6463CB2491692200969F02 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6463A9249168C000969F02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDF85E3249177BE004238FD /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC646380249168BA00969F02 = {
+			isa = PBXGroup;
+			children = (
+				AC64638B249168BA00969F02 /* CloudKitSync */,
+				AC6463A1249168BF00969F02 /* CloudKitSync WatchKit App */,
+				AC6463B0249168C000969F02 /* CloudKitSync WatchKit Extension */,
+				AC64638A249168BA00969F02 /* Products */,
+				AC6463C92491692200969F02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC64638A249168BA00969F02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC646389249168BA00969F02 /* CloudKitSync.app */,
+				AC64639D249168BF00969F02 /* CloudKitSync WatchKit App.app */,
+				AC6463AC249168C000969F02 /* CloudKitSync WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC64638B249168BA00969F02 /* CloudKitSync */ = {
+			isa = PBXGroup;
+			children = (
+				AC6463C82491691E00969F02 /* CloudKitSync.entitlements */,
+				AC6463C5249168FD00969F02 /* CoreData */,
+				AC64638C249168BA00969F02 /* AppDelegate.swift */,
+				AC64638E249168BA00969F02 /* SceneDelegate.swift */,
+				AC646390249168BA00969F02 /* ViewController.swift */,
+				AC646392249168BA00969F02 /* Main.storyboard */,
+				AC646395249168BE00969F02 /* Assets.xcassets */,
+				AC646397249168BF00969F02 /* LaunchScreen.storyboard */,
+				AC64639A249168BF00969F02 /* Info.plist */,
+				AC6463CC24916A6500969F02 /* CloudKitSync.xcdatamodeld */,
+			);
+			path = CloudKitSync;
+			sourceTree = "<group>";
+		};
+		AC6463A1249168BF00969F02 /* CloudKitSync WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AC6463A2249168BF00969F02 /* Interface.storyboard */,
+				AC6463A5249168C000969F02 /* Assets.xcassets */,
+				AC6463A7249168C000969F02 /* Info.plist */,
+			);
+			path = "CloudKitSync WatchKit App";
+			sourceTree = "<group>";
+		};
+		AC6463B0249168C000969F02 /* CloudKitSync WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACDF85E1249177BA004238FD /* CloudKitSync WatchKit Extension.entitlements */,
+				AC6463B1249168C000969F02 /* InterfaceController.swift */,
+				AC6463B3249168C000969F02 /* ExtensionDelegate.swift */,
+				AC6463B5249168C100969F02 /* Assets.xcassets */,
+				AC6463B7249168C100969F02 /* Info.plist */,
+			);
+			path = "CloudKitSync WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AC6463C5249168FD00969F02 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AC6463C62491690E00969F02 /* CoreDataManager.swift */,
+				AC6463D12491739400969F02 /* CharacterDef.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AC6463C92491692200969F02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACDF85E2249177BE004238FD /* CloudKit.framework */,
+				AC6463CA2491692200969F02 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC646388249168BA00969F02 /* CloudKitSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6463C2249168C100969F02 /* Build configuration list for PBXNativeTarget "CloudKitSync" */;
+			buildPhases = (
+				AC646385249168BA00969F02 /* Sources */,
+				AC646386249168BA00969F02 /* Frameworks */,
+				AC646387249168BA00969F02 /* Resources */,
+				AC6463C1249168C100969F02 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC6463A0249168BF00969F02 /* PBXTargetDependency */,
+			);
+			name = CloudKitSync;
+			productName = CloudKitSync;
+			productReference = AC646389249168BA00969F02 /* CloudKitSync.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC64639C249168BF00969F02 /* CloudKitSync WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6463BE249168C100969F02 /* Build configuration list for PBXNativeTarget "CloudKitSync WatchKit App" */;
+			buildPhases = (
+				AC64639B249168BF00969F02 /* Resources */,
+				AC6463BD249168C100969F02 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC6463AF249168C000969F02 /* PBXTargetDependency */,
+			);
+			name = "CloudKitSync WatchKit App";
+			productName = "CloudKitSync WatchKit App";
+			productReference = AC64639D249168BF00969F02 /* CloudKitSync WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AC6463AB249168C000969F02 /* CloudKitSync WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC6463BA249168C100969F02 /* Build configuration list for PBXNativeTarget "CloudKitSync WatchKit Extension" */;
+			buildPhases = (
+				AC6463A8249168C000969F02 /* Sources */,
+				AC6463A9249168C000969F02 /* Frameworks */,
+				AC6463AA249168C000969F02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CloudKitSync WatchKit Extension";
+			productName = "CloudKitSync WatchKit Extension";
+			productReference = AC6463AC249168C000969F02 /* CloudKitSync WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC646381249168BA00969F02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Guilherme Martins Dalosto de Oliveira";
+				TargetAttributes = {
+					AC646388249168BA00969F02 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					AC64639C249168BF00969F02 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					AC6463AB249168C000969F02 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = AC646384249168BA00969F02 /* Build configuration list for PBXProject "CloudKitSync" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC646380249168BA00969F02;
+			productRefGroup = AC64638A249168BA00969F02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC646388249168BA00969F02 /* CloudKitSync */,
+				AC64639C249168BF00969F02 /* CloudKitSync WatchKit App */,
+				AC6463AB249168C000969F02 /* CloudKitSync WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC646387249168BA00969F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC646399249168BF00969F02 /* LaunchScreen.storyboard in Resources */,
+				AC646396249168BE00969F02 /* Assets.xcassets in Resources */,
+				AC646394249168BA00969F02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC64639B249168BF00969F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6463A6249168C000969F02 /* Assets.xcassets in Resources */,
+				AC6463A4249168BF00969F02 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6463AA249168C000969F02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6463B6249168C100969F02 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC646385249168BA00969F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6463CE24916A6500969F02 /* CloudKitSync.xcdatamodeld in Sources */,
+				AC6463D22491739400969F02 /* CharacterDef.swift in Sources */,
+				AC646391249168BA00969F02 /* ViewController.swift in Sources */,
+				AC64638D249168BA00969F02 /* AppDelegate.swift in Sources */,
+				AC6463C72491690E00969F02 /* CoreDataManager.swift in Sources */,
+				AC64638F249168BA00969F02 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC6463A8249168C000969F02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC6463D4249173AC00969F02 /* CloudKitSync.xcdatamodeld in Sources */,
+				AC6463D02491736E00969F02 /* CoreDataManager.swift in Sources */,
+				AC6463D32491739E00969F02 /* CharacterDef.swift in Sources */,
+				AC6463B4249168C000969F02 /* ExtensionDelegate.swift in Sources */,
+				AC6463B2249168C000969F02 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC6463A0249168BF00969F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC64639C249168BF00969F02 /* CloudKitSync WatchKit App */;
+			targetProxy = AC64639F249168BF00969F02 /* PBXContainerItemProxy */;
+		};
+		AC6463AF249168C000969F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC6463AB249168C000969F02 /* CloudKitSync WatchKit Extension */;
+			targetProxy = AC6463AE249168C000969F02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC646392249168BA00969F02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC646393249168BA00969F02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC646397249168BF00969F02 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC646398249168BF00969F02 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AC6463A2249168BF00969F02 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC6463A3249168BF00969F02 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC6463B8249168C100969F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC6463B9249168C100969F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC6463BB249168C100969F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "CloudKitSync WatchKit Extension/CloudKitSync WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YWK9C69PH;
+				INFOPLIST_FILE = "CloudKitSync WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.CloudKitSync.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		AC6463BC249168C100969F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "CloudKitSync WatchKit Extension/CloudKitSync WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YWK9C69PH;
+				INFOPLIST_FILE = "CloudKitSync WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.CloudKitSync.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		AC6463BF249168C100969F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YWK9C69PH;
+				IBSC_MODULE = CloudKitSync_WatchKit_Extension;
+				INFOPLIST_FILE = "CloudKitSync WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.CloudKitSync.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		AC6463C0249168C100969F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YWK9C69PH;
+				IBSC_MODULE = CloudKitSync_WatchKit_Extension;
+				INFOPLIST_FILE = "CloudKitSync WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.CloudKitSync.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		AC6463C3249168C100969F02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitSync/CloudKitSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YWK9C69PH;
+				INFOPLIST_FILE = CloudKitSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.CloudKitSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC6463C4249168C100969F02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CloudKitSync/CloudKitSync.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YWK9C69PH;
+				INFOPLIST_FILE = CloudKitSync/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.CloudKitSync;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC646384249168BA00969F02 /* Build configuration list for PBXProject "CloudKitSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6463B8249168C100969F02 /* Debug */,
+				AC6463B9249168C100969F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6463BA249168C100969F02 /* Build configuration list for PBXNativeTarget "CloudKitSync WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6463BB249168C100969F02 /* Debug */,
+				AC6463BC249168C100969F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6463BE249168C100969F02 /* Build configuration list for PBXNativeTarget "CloudKitSync WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6463BF249168C100969F02 /* Debug */,
+				AC6463C0249168C100969F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC6463C2249168C100969F02 /* Build configuration list for PBXNativeTarget "CloudKitSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC6463C3249168C100969F02 /* Debug */,
+				AC6463C4249168C100969F02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC6463CC24916A6500969F02 /* CloudKitSync.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC6463CD24916A6500969F02 /* CloudKitSync.xcdatamodel */,
+			);
+			currentVersion = AC6463CD24916A6500969F02 /* CloudKitSync.xcdatamodel */;
+			path = CloudKitSync.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC646381249168BA00969F02 /* Project object */;
+}
